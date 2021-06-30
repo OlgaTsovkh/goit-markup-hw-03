@@ -16,6 +16,18 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
 .list {
   list-style: none;
@@ -139,6 +151,12 @@ body {
   color: var(--accent-content-color);
   background: var(--accent-color);
   cursor: pointer;
+
+  display: inline-block;
+  text-align: center;
+
+  border-radius: 4px;
+  padding: 32px, 10px;
 }
 
 .hero-btn:hover,
@@ -238,25 +256,6 @@ body {
 .footer-contact {
   color: var(--footer-link-color);
 }
-
-/*.footer-location-link {
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--main-font-size);
-  line-height: 1.71;
-  /* or 171% */
-/*letter-spacing: var(--main-letter-spacing);
-  color: var(--accent-content-color);
-}
-.footer-contact-link {
-  font-weight: 400;
-  font-style: normal;
-  font-size: var(--main-font-size);
-  line-height: 1.71;
-  /* or 171% */
-/*letter-spacing: var(--main-letter-spacing);
-  color: var(--footer-link-color);
-} */
 
 /*=====================PORTFOLIO======================*/
 /*=====================NAVIGATION====================*/
