@@ -16,34 +16,38 @@
 
 <body>
     <header class="header">
-        <nav class="header-nav">
-            <a class="logo link" href="./index.html">Web<span>Studio</span></a>
-            <ul class="menu list">
-                <li class="menu-item"> <a class="header-link navigation link" href="./index.html">Студия</a>
+        <div class="container menu">
+            <nav class="menu">
+                <a class="logo link" href="./index.html"> Web<span>Studio</span></a>
+                <ul class="list menu header-nav">
+                    <li class="menu-item item"> <a class="header-link navigation link" href="./index.html">
+                            Студия</a>
+                    </li>
+    
+                    <li class="menu-item item"> <a class="header-link navigation link current" href="./portfolio.html"> Портфолио
+                        </a>
+                    </li>
+    
+                    <li class="menu-item item"> <a class="header-link navigation link" href="/"> Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <ul class="menu list header-contacts">
+                <li class="header-mail item"><a class="header-link contacts link"
+                        href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
-
-                <li class="menu-item"> <a class="header-link navigation link current" href="./portfolio.html"> Портфолио
-                    </a>
-                </li>
-
-                <li class="menu-item"> <a class="header-link navigation link" href="/">Контакты</a>
+                <li class="header-phone item"><a class="header-link contacts link" href="tel:+380961111111">+38 096 111 11
+                        11</a>
                 </li>
             </ul>
-        </nav>
-
-        <ul class="menu list">
-            <li class="header-mail"><a class="header-link contacts link"
-                    href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="header-phone"><a class="header-link contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
-
+        </div>
+    
     </header>
 
     <main>
-        <section>
-            <div class="container">
+        <section class="container portfolio-page">
+            <div>
             <h1 class="portfolio">Портфолио</h1>
             <ul class="navigation list">
                 <li class="nav-element"> <button class="nav-btn" type="button">Все</button> </li>
@@ -54,73 +58,109 @@
             </ul>
             </div>
 
-            <div class="container">
+            <div>
             <h2 class="projects">Наши проекты</h2>
 
             <ul class="projects-list list">
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/technokriak.jpg" alt="Страница веб-сайта проекта Технокряк" width="370"
                         height="294">
-                    <h3 class="projects-list-title">Технокряк</h3>
-                    <p class="projects-list-descr">Веб-сайт</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Технокряк</h3>
+                        <p class="projects-list-descr">Веб-сайт</p>
+                    </div>
                 </li>
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/basketball-poster.jpg" alt="Игроки команд играют в баскетбол"
                         width="370" height="294">
-                    <h3 class="projects-list-title">Постер <span lang="en">New Orlean vs Golden Star</span> </h3>
-                    <p class="projects-list-descr">Дизайн</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Постер <span lang="en">New Orlean vs Golden Star</span> </h3>
+                        <p class="projects-list-descr">Дизайн</p>
+                    </div>
                 </li>
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/seafood.jpg" alt="Логотип ресторана" width="370" height="294">
-                    <h3 class="projects-list-title">Ресторан <span lang="en">Seafood</span></h3>
-                    <p class="projects-list-descr">Приложение</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Ресторан <span lang="en">Seafood</span></h3>
+                        <p class="projects-list-descr">Приложение</p>
+                    </div>
                 </li>
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/headphone.jpg" alt="Наушники" width="370" height="294">
-                    <h3 class="projects-list-title">Проект <span lang="en">Prime</span></h3>
-                    <p class="projects-list-descr">Маркетинг</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Проект <span lang="en">Prime</span></h3>
+                        <p class="projects-list-descr">Маркетинг</p>
+                    </div>
                 </li>
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/boxes.jpg" alt="Образцы коробок з логотипами" width="370" height="294">
-                    <h3 class="projects-list-title">Проект <span lang="en">Boxes</span></h3>
-                    <p class="projects-list-descr">Приложение</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Проект <span lang="en">Boxes</span></h3>
+                        <p class="projects-list-descr">Приложение</p>
+                    </div>
                 </li>
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/inspiration.jpg" alt="Приветственная страница веб-сайта" width="370"
                         height="294">
-                    <h3 class="projects-list-title" lang="en">Inspiration has no Borders</h3>
-                    <p class="projects-list-descr">Веб-сайт</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title" lang="en">Inspiration has no Borders</h3>
+                        <p class="projects-list-descr">Веб-сайт</p>
+                    </div>
                 </li>
 
                 <li class="projects-list-item">
                     <img src="./images/portfolio/magazine.jpg" alt="Развертка печатного издания" width="370"
                         height="294">
-                    <h3 class="projects-list-title">Издание <span lang="en">Limited Edition</span></h3>
-                    <p class="projects-list-descr">Дизайн</p>
+                   
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Издание <span lang="en">Limited Edition</span></h3>
+                        <p class="projects-list-descr">Дизайн</p>
+                    </div>
                 </li>
 
                 <li class="projects-list-item">
                     <img src="./images/portfolio/label-tag.jpg" alt="Етикетка бренда" width="370" height="294">
-                    <h3 class="projects-list-title">Проект <span lang="en">LAB</span></h3>
-                    <p class="projects-list-descr">Маркетинг</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title">Проект <span lang="en">LAB</span></h3>
+                        <p class="projects-list-descr">Маркетинг</p>
+                    </div>
                 </li>
+
                 <li class="projects-list-item">
                     <img src="./images/portfolio/growing-business.jpg"
                         alt="Приветственная страница приложения на лептопе" width="370" height="294">
-                    <h3 class="projects-list-title" lang="en"> Growing Business</h3>
-                    <p class="projects-list-descr">Приложение</p>
+                    
+                    <div class="card-description">
+                        <h3 class="projects-list-title" lang="en"> Growing Business</h3>
+                        <p class="projects-list-descr">Приложение</p>
+                    </div>
                 </li>
             </ul>
             </div>
         </section>
-
-
     </main>
 
     <footer class="footer">
-        <a class="logo link" href="./index.html">Web<span>Studio</span></a>
+        <div class="container">
+        
+        <div >    <a class="logo link" href="./index.html">Web<span>Studio</span></a>
+        </div>
+        <div class="main-contact">
         <address>
-            <ul class="main-contact list">
+            <ul class="list ">
                 <li class="footer-item"> <a class="footer-link footer-location link"
                         href="https://goo.gl/maps/r5K1gxjUBZvfCBvk8">г. Киев, пр-т Леси Украинки, 26</a>
                 </li>
@@ -135,6 +175,8 @@
                 </li>
             </ul>
         </address>
+        </div>
+        </div>
     </footer>
     </body>
 
