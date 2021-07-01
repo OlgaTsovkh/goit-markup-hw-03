@@ -11,6 +11,7 @@
   --our-team-bgr: #f5f4fa;
   --footer-bgr: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
+  --boder-color: #eeeeee;
 }
 
 body {
@@ -49,6 +50,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 /**,
 *::before,
@@ -62,9 +70,10 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  /* identical to box height */
   letter-spacing: var(--main-letter-spacing);
   color: var(--accent-color);
+
+  display: block;
 }
 
 .header .logo span {
@@ -74,10 +83,12 @@ p {
 .footer .logo span {
   color: var(--accent-content-color);
 }
+
 /*========================MENU=====================*/
 
 .header {
   color: var(--accent-content-color);
+  border-bottom: 1px solid #ececec;
 }
 
 .header-link {
@@ -130,6 +141,8 @@ p {
 .hero {
   background: var(--hero-bgr);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-text {
@@ -140,6 +153,7 @@ p {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--accent-content-color);
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -182,8 +196,8 @@ p {
   margin-right: 30px;
 }
 
-.advantages-list-item:nth-child(4n) {
-  margin-right: 0px;
+.advantages-list-item:not(:last-child) {
+  margin-right: 0;
 }
 
 .adv-title {
@@ -267,8 +281,8 @@ p {
   flex-direction: column;
 }
 
-.our-team-list-item:nth-child(4n) {
-  margin-right: 0px;
+.our-team-list-item:last-child {
+  margin-right: 0;
 }
 
 .employee {
@@ -276,7 +290,7 @@ p {
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  background: #ffffff;
+  background: var (--accent-content-color);
   border-radius: 0px 0px 4px 4px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -295,9 +309,6 @@ p {
 .our-team-description {
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-
-  /*text-align: center;*/
   letter-spacing: var(--main-letter-spacing);
   color: var(--secondary-text-color);
 }
@@ -311,9 +322,13 @@ p {
 }
 
 .main-contact {
-  margin-top: 200xp;
+  margin-top: 20px;
+  margin-bottom: 6px;
 }
 
+.main-contact:last-child {
+  margin-bottom: 0px;
+}
 .footer-link {
   font-weight: 400;
   font-style: normal;
@@ -335,8 +350,24 @@ p {
 .portfolio-page {
   padding-top: 94px;
   padding-bottom: 94px;
-  border-top: 1px solid #ececec;
 }
+
+.filters {
+  margin-bottom: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: var(--main-text-color);
+}
+
+.nav-element {
+  display: inline;
+}
+
+.nav-element:not(:last-child) {
+  margin-right: 6px;
+}
+
 .nav-btn {
   font: inherit;
   font-weight: 500;
@@ -344,7 +375,7 @@ p {
   line-height: 1.62;
   letter-spacing: var(--main-letter-spacing);
   color: var(--main-text-color);
-  background: #f5f4fa;
+  background: var(--our-team-bgr);
 
   text-align: center;
   border: none;
@@ -359,31 +390,33 @@ p {
   cursor: pointer;
 }
 
-.projects-list-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-.projects-list-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.projects-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 30px;
-}
-
 .projects-list {
   display: flex;
   flex-wrap: wrap;
 }
 
+.projects-list-item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.projects-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.projects-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 30px;
+}
+.card-projects {
+  display: block;
+}
+
 .card-description {
   width: 370px;
   padding: 20px 24px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  border-top: 0px;
+  background: var(--accent-content-color);
+  border: 1px solid var(--boder-color);
+  border-top: 0;
 }
 .projects-list-title {
   font-weight: 700;
@@ -391,6 +424,8 @@ p {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-text-color);
+
+  margin-bottom: 4px;
 }
 
 .projects-list-descr {
@@ -398,14 +433,4 @@ p {
   line-height: 1.87;
   letter-spacing: var(--main-letter-spacing);
   color: var(--secondary-text-color);
-}
-
-.navigation {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
-.nav-element {
-  margin-right: 30px;
 }
