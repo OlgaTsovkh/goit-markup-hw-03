@@ -196,7 +196,7 @@ p {
   margin-right: 30px;
 }
 
-.advantages-list-item:not(:last-child) {
+.advantages-list-item:last-child {
   margin-right: 0;
 }
 
