@@ -505,7 +505,7 @@ p {
 }
 .footer-social-list {
   width: 206px;
-  display: flex-inline;
+  display: block;
 
 }
 
